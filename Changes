@@ -1,0 +1,6 @@
+Revision history for Perl extension Google::CostUploadAPI.
+
+0.01  Thu Jan 30 17:56:40 2014
+	- original version; created by h2xs 1.23 with options
+		-AX -n Google::CostUploadAPI -b 5.14.2 -v 0.01
+

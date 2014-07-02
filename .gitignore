@@ -1,0 +1,4 @@
+exports.sh
+*.old
+*.sublime-project
+*.sublime-workspace
