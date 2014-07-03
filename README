@@ -1,16 +1,11 @@
 Google-CostUploadAPI version 0.01
 =================================
+Perl wrapper for cost upload api
 
-The README is used to introduce the module and provide instructions on
-how to install the module, any machine dependencies it may have (for
-example C compilers and installed libraries) and any other information
-that should be provided before the module is installed.
-
-A README file is required for CPAN modules since CPAN extracts the
-README file from a module distribution so that people browsing the
-archive can use it get an idea of the modules uses. It is usually a
-good idea to provide version information here so that people can
-decide whether fixes for the module are worth downloading.
+USAGE
+my $api = new Google::CostUploadAPI(token => $access_token);
+my $res = $api -> upload(date => '2014-04-17', data_source => CUSTOM_DATA_SOURCE_ID, property => WEBPROPERTY_ID, account => ACCOUNT_ID , bytes => SOME_DATA);
+warn $api -> get_error() -> {'error'} -> {'message'} unless ($res);
 
 INSTALLATION
 
@@ -25,7 +20,7 @@ DEPENDENCIES
 
 This module requires these other modules and libraries:
 
-  blah blah blah
+  LWP::UserAgent >= 6.06
 
 COPYRIGHT AND LICENCE
 
